@@ -1,0 +1,66 @@
+.site {
+  height: calc(100vh - 2em);
+  background-image: url('/Users/peterohman/Documents/mywebsite/trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.site {
+	margin: 1em;
+  z-index: -3;
+}
+
+.PHOTO,
+.PAINT,
+.threeDee,
+.ANIMATION,
+.CONTACT {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.PHOTO:hover,
+.PAINT:hover,
+.threeDee:hover ,
+.ANIMATION:hover,
+.CONTACT:hover {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: .3s;
+}
+
+.PHOTO {
+  grid-area: photo;
+    background-color: rgba(138,212,255, 0.25);
+}
+
+.PAINT {
+  grid-area: paint;
+    background-color: rgba(255,218,138,0.25);
+
+}
+
+.threeDee {
+  grid-area: threedeearea;
+    background-color: rgba(255,138,228,0.25);
+}
+
+.ANIMATION {
+  grid-area: animation;
+    background-color: rgba(138,255,218,0.25);
+}
+
+.CONTACT {
+  grid-area: contact;
+    background-color: rgba(218,255,138,0.25);
+}

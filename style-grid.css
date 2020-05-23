@@ -1,0 +1,26 @@
+.site {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+	grid-gap: 1em;
+	grid-template-areas:
+		"photo paint"
+		"threedeearea animation"
+		"contact contact";
+}
+
+@media screen and (max-width: 600px) {
+
+	.site {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"photo"
+		"paint"
+		"threedeearea"
+		"animation"
+		"contact";
+
+	}
+}
