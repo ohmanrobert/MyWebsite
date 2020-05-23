@@ -40,16 +40,24 @@
   grid-area: photo;
   background-color: rgba(138,212,255, 0.25);
 }
+.PHOTO:hover{
+  color: rgba(255,218,138, 1);
+}
 
 .PAINT {
   grid-area: paint;
-  background-color: rgba(255,218,138,0.25);
-
+  background-color: rgba(255,175,200,0.25);
+}
+.PAINT:hover {
+  color: rgba(75,255,150, 1);
 }
 
 .threeDee {
   grid-area: threedeearea;
-  background-color: rgba(255,138,228,0.25);
+  background-color: rgba(255,218,138,0.25);
+}
+.threeDee:hover {
+  color: rgba(200, 150,255, 1);
 }
 
 .ANIMATION {
@@ -57,7 +65,14 @@
   background-color: rgba(138,255,218,0.25);
 }
 
+.ANIMATION:hover {
+  color: rgba(255, 175, 200, 1);
+}
+
 .CONTACT {
   grid-area: contact;
   background-color: rgba(218,255,138,0.25);
+}
+.CONTACT:hover {
+  color: rgba(255, 200, 100, 1);
 }
