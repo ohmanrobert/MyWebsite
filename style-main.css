@@ -1,6 +1,6 @@
 .site {
   height: calc(100vh - 2em);
-  background-image: url('/Users/peterohman/Documents/mywebsite/trash-1994.jpg');
+  background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
