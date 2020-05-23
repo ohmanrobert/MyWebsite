@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 2em);
+  height: calc(100vh);
   margin: 1em;
   z-index: -3;
 }
