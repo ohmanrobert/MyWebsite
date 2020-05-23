@@ -1,9 +1,9 @@
 .site {
-  height: calc(100vh - 2em);
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: calc(100vh - 2em);
   margin: 1em;
   z-index: -3;
 }
@@ -17,6 +17,7 @@
   font-family: sans-serif;
   text-align: center;
   justify-content: center;
+  padding: 1em;
   z-index: 3;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
