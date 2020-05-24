@@ -9,6 +9,36 @@
 		"contact contact";
 }
 
+.PHOTOpage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr);
+	grid-gap: 1em;
+	grid-template-areas:
+	"people city"
+	"places client";
+}
+
+.PAINTINGpage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr);
+	grid-gap: 1em;
+	grid-template-areas:
+	"oil watercolor"
+	"digital sketch";
+}
+
+.threeDeepage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(200, 1fr);
+	grid-gap: 1em;
+	grid-template-areas:
+	"images motion";
+
+}
+
 @media screen and (max-width: 600px) {
 
 	.site {
@@ -22,6 +52,42 @@
 		"threedeearea"
 		"animation"
 		"contact";
+	}
 
+	.PHOTOpage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas:
+		"people"
+		"city"
+		"places"
+		"client";
+	}
+
+	.PAINTINGpage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas:
+		"oil"
+		"watercolor"
+		"digital"
+		"sketch";
+	}
+
+
+}
+@media screen and (max-width: 900px) {
+	.threeDeepage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas:
+		"images"
+		"motion";
 	}
 }
