@@ -12,30 +12,35 @@
 .PHOTOpage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr);
+	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200, 1fr) minmax(200, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
+	"navbar navbar"
 	"people city"
-	"places client";
+	"places client"
+	"home home";
 }
 
 .PAINTINGpage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr);
+	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200, 1fr) minmax(200, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
+	"navbar navbar"
 	"oil watercolor"
-	"digital sketch";
+	"digital sketch"
+	"home home";
 }
 
 .threeDeepage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr);
+	grid-template-rows: minmax(200, 1fr) minmax(200, 1fr) minmax(200, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
-	"images motion";
+	"images motion"
+	"home home";
 
 }
 
@@ -60,22 +65,26 @@
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-gap: 1em;
 		grid-template-areas:
+		"navbar"
 		"people"
 		"city"
 		"places"
-		"client";
+		"client"
+		"home";
 	}
 
 	.PAINTINGpage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 1em;
 		grid-template-areas:
+		"navbar"
 		"oil"
 		"watercolor"
 		"digital"
-		"sketch";
+		"sketch"
+		"home";
 	}
 
 
@@ -84,10 +93,12 @@
 	.threeDeepage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-gap: 1em;
 		grid-template-areas:
+		"navbar"
 		"images"
-		"motion";
+		"motion"
+		"home";
 	}
 }

@@ -39,8 +39,14 @@
 }
 
 a {
+  font-size: 100%;
+  justify-content: center;
   color: inherit;
-  text-decoration: none;}
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 a:hover {color: inherit;
   text-decoration: none;}
 
@@ -58,7 +64,8 @@ a:hover {color: inherit;
 .DIGITAL,
 .SKETCH,
 .IMAGES,
-.MOTION {
+.MOTION,
+.HOME {
   color: white;
   font-family: sans-serif;
   text-align: center;
@@ -86,10 +93,18 @@ a:hover {color: inherit;
 .DIGITAL:hover,
 .SKETCH:hover,
 .IMAGES:hover,
-.MOTION:hover {
+.MOTION:hover,
+.HOME:hover {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: .3s;
+}
+
+.HOME {
+  grid-area: home;
+  background-color: rgba(255,150,150, 0.25);}
+.HOME:hover {
+  color: rgba(255,100,100, 1);
 }
 
 .PHOTO {
@@ -124,24 +139,35 @@ a:hover {color: inherit;
 
 .CLIENT {
   grid-area: client;
+  background-color: rgba(150, 100, 255, 0.25);
 }
 .CLIENT:hover {
+  color: rgba(255, 200, 0, 1);
 }
 
 .CITY {
   grid-area: city;
+  background-color: rgba(255, 100, 200, 0.25);
 }
-.CITY:hover {}
+.CITY:hover {
+  color: rgba(150, 200, 255, 1);
+}
 
 .PEOPLE {
   grid-area: people;
+  background-color: rgba(255,150,50,0.25);
 }
-.PEOPLE:hover {}
+.PEOPLE:hover {
+  color: rgba(85, 255, 200, 1);
+}
 
 .PLACES {
   grid-area: places;
+  background-color: rgba(150, 255, 255, 0.25);
 }
-.PLACES:hover {}
+.PLACES:hover {
+  color: rgba(255, 150, 255, 1)
+}
 
 .OIL {
   grid-area: oil;
