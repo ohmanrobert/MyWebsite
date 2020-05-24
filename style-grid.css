@@ -1,7 +1,7 @@
 .site {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+	grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
 		"photo paint"
@@ -12,7 +12,7 @@
 .PHOTOpage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200, 1fr) minmax(200, 1fr);
+	grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
 	"navbar navbar"
@@ -24,7 +24,7 @@
 .PAINTINGpage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200px, 1fr) minmax(200, 1fr) minmax(200, 1fr);
+	grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150PX, 1fr) minmax(150px, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
 	"navbar navbar"
@@ -36,9 +36,10 @@
 .threeDeepage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(200, 1fr) minmax(200, 1fr) minmax(200, 1fr);
+	grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
+	"navbar navbar"
 	"images motion"
 	"home home";
 
@@ -62,7 +63,7 @@
 	.PHOTOpage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"

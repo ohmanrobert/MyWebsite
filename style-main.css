@@ -65,7 +65,8 @@ a:hover {color: inherit;
 .SKETCH,
 .IMAGES,
 .MOTION,
-.HOME {
+.HOME,
+.NAVBAR {
   color: white;
   font-family: sans-serif;
   text-align: center;
@@ -94,19 +95,35 @@ a:hover {color: inherit;
 .SKETCH:hover,
 .IMAGES:hover,
 .MOTION:hover,
-.HOME:hover {
+.HOME:hover,
+.NAVBAR:hover {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: .3s;
 }
 
+.niceColPairs {
+  background-color: rgba(150, 100, 255, 0.25);
+  color: rgba(255, 200, 0, 1);
+
+  background-color: rgba(255, 100, 200, 0.25);
+  color: rgba(150, 200, 255, 1);
+
+  background-color: rgba(255,150,50,0.25);
+  color: rgba(85, 255, 200, 1);
+
+  background-color: rgba(150, 255, 255, 0.25);
+  color: rgba(255, 150, 255, 1);
+}
+.NAVBAR {
+  grid-area: navbar;
+}
 .HOME {
   grid-area: home;
   background-color: rgba(255,150,150, 0.25);}
 .HOME:hover {
   color: rgba(255,100,100, 1);
 }
-
 .PHOTO {
   grid-area: photo;
   background-color: rgba(138,212,255, 0.25);}
@@ -137,58 +154,137 @@ a:hover {color: inherit;
 .CONTACT:hover {
   color: rgba(140, 255, 255, 1);}
 
-.CLIENT {
-  grid-area: client;
-  background-color: rgba(150, 100, 255, 0.25);
-}
-.CLIENT:hover {
-  color: rgba(255, 200, 0, 1);
-}
+@media screen and (min-width: 600px) {
 
-.CITY {
-  grid-area: city;
-  background-color: rgba(255, 100, 200, 0.25);
-}
-.CITY:hover {
-  color: rgba(150, 200, 255, 1);
-}
+  .PEOPLE {
+    grid-area: people;
+    background-color: rgba(138,212,255, 0.25);
+  }
+  .PEOPLE:hover {
+    color: rgba(255,218,138, 1);
+  }
+  .CITY {
+    grid-area: city;
+    background-color: rgba(138,212,255, 0.25);
 
-.PEOPLE {
-  grid-area: people;
-  background-color: rgba(255,150,50,0.25);
-}
-.PEOPLE:hover {
-  color: rgba(85, 255, 200, 1);
-}
+  }
+  .CITY:hover {
+    color: rgba(140, 255, 255, 1);
+  }
+  .CLIENT {
+    grid-area: client;
+    ;
+  }
+  .CLIENT:hover {
 
-.PLACES {
-  grid-area: places;
-  background-color: rgba(150, 255, 255, 0.25);
+  }
+  .PLACES {
+    grid-area: places;
+  }
+  .PLACES:hover {
+
+  }
+
+  .OIL {
+    grid-area: oil;
+    background-color: rgba(255,175,200,0.25);
+  }
+  .OIL:hover {
+    color: rgba(100,255,150, 1);
+  }
+
+  .WATERCOLOR {
+  grid-area: watercolor;
+  }
+  .WATERCOLOR:hover {}
+
+  .DIGITAL {
+    grid-area: digital;
+  }
+  .DIGITAL:hover {}
+
+  .SKETCH {grid-area: sketch;}
+  .SKETCH:hover{}
+
+  .IMAGES {
+    grid-area: images;
+    background-color: rgba(255,200,118,0.25);
+  }
+  .IMAGES:hover {
+      color: rgba(200, 150,255, 1);
+  }
+
+  .MOTION {grid-area: motion;}
+  .MOTION:hover {}
 }
-.PLACES:hover {
-  color: rgba(255, 150, 255, 1)
+@media screen and (max-width: 600px) {
+
+  .PEOPLE {
+    grid-area: people;
+    background-color: rgba(138,212,255, 0.25);
+
+  }
+  .PEOPLE:hover {
+    color: rgba(255,218,138, 1);;
+  }
+  .CITY {
+    grid-area: city;
+
+  }
+  .CITY:hover {
+
+  }
+  .CLIENT {
+    grid-area: client;
+  }
+  .CLIENT:hover {
+
+  }
+  .PLACES {
+    grid-area: places;
+  }
+  .PLACES:hover {
+
+  }
+
+  .OIL {
+    grid-area: oil;
+    background-color: rgba(255,175,200,0.25);
+  }
+  .OIL:hover {
+    color: rgba(100,255,150, 1);
+  }
+
+  .WATERCOLOR {
+  grid-area: watercolor;
+  }
+  .WATERCOLOR:hover {}
+
+  .DIGITAL {
+    grid-area: digital;
+  }
+  .DIGITAL:hover {}
+
+  .SKETCH {grid-area: sketch;}
+  .SKETCH:hover{}
+
+
 }
+@media screen {
+  .IMAGES {
+    grid-area: images;
+    background-color: rgba(255,200,118,0.25);
+  }
+  .IMAGES:hover {
+      color: rgba(200, 150,255, 1);
+  }
 
-.OIL {
-  grid-area: oil;
+  .MOTION {
+    grid-area: motion;
+    background-color: rgba(255,184,153,0.25);
+  }
+  .MOTION:hover {
+    color: rgba(255, 133, 215, 1)
+
+  }
 }
-.OIL:hover {}
-
-.WATERCOLOR {
-grid-area: watercolor;
-}
-.WATERCOLOR:hover {}
-
-.DIGITAL {
-  grid-area: digital;
-}
-.DIGITAL:hover {}
-
-.SKETCH {grid-area: sketch;}
-.SKETCH:hover{}
-
-.IMAGES {grid-area: images;}
-.IMAGES:hover {}
-
-.MOTION {grid-area: motion;}
-.MOTION:hover {}
