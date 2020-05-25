@@ -27,7 +27,9 @@
   margin: 1em;
   z-index: -3;
 }
-
+.PAINTINGpage .PAINT {color: rgba(100,255,150, 1);}
+.PHOTOpage .PHOTO {color: rgba(255,218,138, 1);}
+.threeDeepage .threeDee {color: rgba(200, 150,255, 1);}
 .threeDeepage {
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
@@ -71,8 +73,8 @@ a:hover {color: inherit;
   font-family: sans-serif;
   text-align: center;
   justify-content: center;
-  padding: 1em;
   z-index: 3;
+  padding: .5em;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -84,7 +86,6 @@ a:hover {color: inherit;
 .PAINT:hover,
 .threeDee:hover ,
 .ANIMATION:hover,
-.CONTACT:hover,
 .CLIENT:hover,
 .CITY:hover,
 .PEOPLE:hover,
@@ -115,12 +116,23 @@ a:hover {color: inherit;
   background-color: rgba(150, 255, 255, 0.25);
   color: rgba(255, 150, 255, 1);
 }
-.NAVBAR {
+
+.NAVBARpaint {
+  grid-area: navbar;
+}
+.NAVBARphoto {
+  grid-area: navbar;
+}
+.NAVBARthreedee {
+  grid-area: navbar;
+}
+.NAVBARanimation {
   grid-area: navbar;
 }
 .HOME {
+  padding: 0em;
   grid-area: home;
-  background-color: rgba(255,150,150, 0.25);}
+  background-color: rgba(255,100,150, 0.25);}
 .HOME:hover {
   color: rgba(255,100,100, 1);
 }
@@ -149,12 +161,15 @@ a:hover {color: inherit;
   color: rgba(255, 175, 200, 1);}
 
 .CONTACT {
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  font-size: 15px;
   grid-area: contact;
-  background-color: rgba(255,100,50,0.25);}
+  background-color: rgba(255,100,50,0);}
 .CONTACT:hover {
   color: rgba(140, 255, 255, 1);}
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 
   .PEOPLE {
     grid-area: people;
@@ -166,23 +181,24 @@ a:hover {color: inherit;
   .CITY {
     grid-area: city;
     background-color: rgba(138,212,255, 0.25);
-
   }
   .CITY:hover {
-    color: rgba(140, 255, 255, 1);
+    color: rgba(255,218,138, 1);
   }
   .CLIENT {
     grid-area: client;
+    background-color: rgba(201,136,255, 0.25);;
     ;
   }
   .CLIENT:hover {
-
+    color: rgba(255, 161, 96, 1);
   }
   .PLACES {
     grid-area: places;
+    background-color: rgba(201,136,255, 0.25);
   }
   .PLACES:hover {
-
+    color: rgba(255, 161, 96, 1);
   }
 
   .OIL {
@@ -195,16 +211,25 @@ a:hover {color: inherit;
 
   .WATERCOLOR {
   grid-area: watercolor;
+  background-color: rgba(255,175,200,0.25);
   }
-  .WATERCOLOR:hover {}
+  .WATERCOLOR:hover {color: rgba(100,255,150, 1);}
 
   .DIGITAL {
     grid-area: digital;
+    background-color: rgba(255, 124, 160, 0.25);
   }
-  .DIGITAL:hover {}
+  .DIGITAL:hover {
+    color: rgba(255, 150, 255, 1);
+  }
 
-  .SKETCH {grid-area: sketch;}
-  .SKETCH:hover{}
+  .SKETCH {
+    grid-area: sketch;
+    background-color: rgba(255, 124, 160, 0.25);
+  }
+  .SKETCH:hover{
+    color: rgba(255, 150, 255, 1);
+  }
 
   .IMAGES {
     grid-area: images;
@@ -214,10 +239,15 @@ a:hover {color: inherit;
       color: rgba(200, 150,255, 1);
   }
 
-  .MOTION {grid-area: motion;}
-  .MOTION:hover {}
+  .MOTION {
+    grid-area: motion;
+    background-color: rgba(255,200,118,0.25);
+  }
+  .MOTION:hover {
+    color: rgba(200, 150,255, 1);
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
   .PEOPLE {
     grid-area: people;
@@ -270,7 +300,7 @@ a:hover {color: inherit;
 
 
 }
-@media screen {
+@media screen and (max-width: 900px) {
   .IMAGES {
     grid-area: images;
     background-color: rgba(255,200,118,0.25);
