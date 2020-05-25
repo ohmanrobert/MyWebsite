@@ -1,78 +1,79 @@
-.site {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) 15px;
-	grid-gap: 1em;
-	grid-template-areas:
-		"photo paint"
-		"threedeearea animation"
+@media screen and (min-width: 700px) {
+	.site {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+			"photo paint"
+			"threedeearea animation"
+			"contact contact";
+	}
+
+	.PHOTOpage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"people city"
+		"places client"
+		"home home"
 		"contact contact";
-}
+	}
 
-.PHOTOpage {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 100px 15px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"navbar navbar"
-	"people city"
-	"places client"
-	"home home"
-	"contact contact";
-}
+	.PAINTINGpage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"oil watercolor"
+		"digital sketch"
+		"home home"
+		"contact contact";
+	}
 
-.PAINTINGpage {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 100px 15px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"navbar navbar"
-	"oil watercolor"
-	"digital sketch"
-	"home home"
-	"contact contact";
-}
+	.threeDeepage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px minmax(150px, 1fr) 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"images motion"
+		"home home"
+		"contact contact";
+	}
+	.NAVBARpaint {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 100px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"photo paint threedeearea animation";
 
-.threeDeepage {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 100px minmax(150px, 1fr) 100px 15px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"navbar navbar"
-	"images motion"
-	"home home"
-	"contact contact";
-}
-.NAVBARpaint {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"photo paint threedeearea animation";
+	}
+	.NAVBARphoto {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 100px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"photo paint threedeearea animation";
+	}
 
+	.NAVBARthreedee {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 100px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"photo paint threedeearea animation";
+	}
 }
-.NAVBARphoto {
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"photo paint threedeearea animation";
-}
-
-.NAVBARthreedee {
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100px;
-	grid-gap: 1em;
-	grid-template-areas:
-	"photo paint threedeearea animation";
-}
-
 @media screen and (max-width: 700px) {
 
 	.site {
@@ -117,10 +118,40 @@
 		"home"
 		"contact";
 	}
+	.NAVBARpaint {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"photo paint"
+		"threedeearea animation";
+
+	}
+	.NAVBARphoto {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"photo paint"
+		"threedeearea animation";
+	}
+
+
 
 
 }
 @media screen and (max-width: 900px) {
+	.NAVBARthreedee {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"photo paint"
+		"threedeearea animation";
+	}
 	.threeDeepage {
 		display: grid;
 		grid-template-columns: 1fr;
