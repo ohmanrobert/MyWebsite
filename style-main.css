@@ -2,8 +2,8 @@
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: calc(100vh - 2em);
+  background-position: top;
+  height: height: calc(100vh - 2em);
   margin: 1em;
   z-index: -3;
 }
@@ -12,8 +12,9 @@
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: calc(100vh - 2em);
+  min-height: 600px;
   margin: 1em;
   z-index: -3;
 }
@@ -22,23 +23,38 @@
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: calc(100vh - 2em);
+  min-height: 600px;
   margin: 1em;
   z-index: -3;
 }
-.PAINTINGpage .PAINT {color: rgba(100,255,150, 1);}
-.PHOTOpage .PHOTO {color: rgba(255,218,138, 1);}
-.threeDeepage .threeDee {color: rgba(200, 150,255, 1);}
 .threeDeepage {
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: calc(100vh - 2em);
+  min-height: 600px;
   margin: 1em;
   z-index: -3;
 }
+
+.ANIMATIONpage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: calc(100vh - 2em);
+  min-height: 600px;
+  margin: 1em;
+  z-index: -3;
+}
+
+.PAINTINGpage .PAINT {color: rgba(100,255,150, 1);}
+.PHOTOpage .PHOTO {color: rgba(255,218,138, 1);}
+.threeDeepage .threeDee {color: rgba(200, 150,255, 1);}
+.ANIMATIONpage .ANIMATION {color: rgba(255, 175, 200, 1);}
 
 a {
   font-size: 100%;
@@ -117,6 +133,7 @@ a:hover {color: inherit;
   color: rgba(255, 150, 255, 1);
 }
 
+
 .NAVBARpaint {
   grid-area: navbar;
 }
@@ -129,6 +146,7 @@ a:hover {color: inherit;
 .NAVBARanimation {
   grid-area: navbar;
 }
+
 .HOME {
   padding: 0em;
   grid-area: home;
@@ -169,25 +187,41 @@ a:hover {color: inherit;
 .CONTACT:hover {
   color: rgba(140, 255, 255, 1);}
 
+.ANIMCONTENT {
+  grid-area: animcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+
 @media screen and (min-width: 700px) {
 
   .PEOPLE {
     grid-area: people;
-    background-color: rgba(138,212,255, 0.25);
+    background: linear-gradient(180deg, rgba(138, 170, 255, .15) 0%, rgba(138, 170, 255, .75) 100%);
   }
   .PEOPLE:hover {
     color: rgba(255,218,138, 1);
   }
   .CITY {
     grid-area: city;
-    background-color: rgba(138,212,255, 0.25);
+    background: linear-gradient(180deg, rgba(138, 170, 255, .15) 0%, rgba(138, 170, 255, .75) 100%);
   }
   .CITY:hover {
     color: rgba(255,218,138, 1);
   }
   .CLIENT {
     grid-area: client;
-    background-color: rgba(201,136,255, 0.25);;
+    background: linear-gradient(180deg, rgba(201, 136, 255, .15) 0%, rgba(201, 136, 255, .6) 100%);
     ;
   }
   .CLIENT:hover {
@@ -195,7 +229,7 @@ a:hover {color: inherit;
   }
   .PLACES {
     grid-area: places;
-    background-color: rgba(201,136,255, 0.25);
+    background: linear-gradient(180deg, rgba(201, 136, 255, .15) 0%, rgba(201, 136, 255, .6) 100%);
   }
   .PLACES:hover {
     color: rgba(255, 161, 96, 1);
@@ -203,7 +237,7 @@ a:hover {color: inherit;
 
   .OIL {
     grid-area: oil;
-    background-color: rgba(255,175,200,0.25);
+    background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
   }
   .OIL:hover {
     color: rgba(100,255,150, 1);
@@ -211,13 +245,13 @@ a:hover {color: inherit;
 
   .WATERCOLOR {
   grid-area: watercolor;
-  background-color: rgba(255,175,200,0.25);
+  background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
   }
   .WATERCOLOR:hover {color: rgba(100,255,150, 1);}
 
   .DIGITAL {
     grid-area: digital;
-    background-color: rgba(255, 124, 160, 0.25);
+    background: linear-gradient(180deg, rgba(255, 124, 160, 0.15) 0%, rgba(255, 124, 160, 0.55) 100%);
   }
   .DIGITAL:hover {
     color: rgba(255, 150, 255, 1);
@@ -225,7 +259,7 @@ a:hover {color: inherit;
 
   .SKETCH {
     grid-area: sketch;
-    background-color: rgba(255, 124, 160, 0.25);
+    background: linear-gradient(180deg, rgba(255, 124, 160, 0.15) 0%, rgba(255, 124, 160, 0.55) 100%);
   }
   .SKETCH:hover{
     color: rgba(255, 150, 255, 1);
@@ -233,7 +267,7 @@ a:hover {color: inherit;
 
   .IMAGES {
     grid-area: images;
-    background-color: rgba(255,200,118,0.25);
+    background: linear-gradient(180deg, rgba(255,200,118,0.15) 0%, rgba(255,200,118,0.5) 100%);
   }
   .IMAGES:hover {
       color: rgba(200, 150,255, 1);
@@ -241,7 +275,7 @@ a:hover {color: inherit;
 
   .MOTION {
     grid-area: motion;
-    background-color: rgba(255,200,118,0.25);
+    background: linear-gradient(180deg, rgba(255,200,118,0.15) 0%, rgba(255,200,118,0.5) 100%);
   }
   .MOTION:hover {
     color: rgba(200, 150,255, 1);
@@ -251,7 +285,7 @@ a:hover {color: inherit;
 
   .PEOPLE {
     grid-area: people;
-    background-color: rgba(138,212,255, 0.25);
+    background-color: rgba(130,175,255, 0.25);
 
   }
   .PEOPLE:hover {
@@ -259,27 +293,32 @@ a:hover {color: inherit;
   }
   .CITY {
     grid-area: city;
+    background-color: rgba(150,140,255, 0.25);
 
   }
   .CITY:hover {
+    color: rgba(255, 201, 120, 1);
+  }
 
+  .PLACES {
+    grid-area: places;
+    background-color: rgba(175, 100, 255, 0.25);
+  }
+  .PLACES:hover {
+    color: rgba(255, 178, 102, 1);
   }
   .CLIENT {
     grid-area: client;
+    background-color: rgba(225, 80, 255, 0.25);
+
   }
   .CLIENT:hover {
-
-  }
-  .PLACES {
-    grid-area: places;
-  }
-  .PLACES:hover {
-
+    color: rgba(255, 161, 96, 1);
   }
 
   .OIL {
     grid-area: oil;
-    background-color: rgba(255,175,200,0.25);
+    background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
   }
   .OIL:hover {
     color: rgba(100,255,150, 1);
@@ -287,23 +326,34 @@ a:hover {color: inherit;
 
   .WATERCOLOR {
   grid-area: watercolor;
+  background: linear-gradient(180deg, rgba(255,155,177,0.15) 0%, rgba(255,155,177,0.5) 100%);
   }
-  .WATERCOLOR:hover {}
+  .WATERCOLOR:hover {
+    color: rgba(170,242,255, 1);
+  }
 
   .DIGITAL {
     grid-area: digital;
+    background: linear-gradient(180deg, rgba(255, 120, 160, 0.15) 0%, rgba(255, 120, 160, 0.5 ) 100%);
   }
-  .DIGITAL:hover {}
+  .DIGITAL:hover {
+    color: rgba(192,160,255, 1);
+  }
 
-  .SKETCH {grid-area: sketch;}
-  .SKETCH:hover{}
+  .SKETCH {
+    grid-area: sketch;
+      background: linear-gradient(180deg, rgba(255,84,128,0.15) 0%, rgba(255,84,128,0.5) 100%);
+  }
+  .SKETCH:hover{
+    color: rgba(255, 150, 255, 1);
+  }
 
 
 }
 @media screen and (max-width: 900px) {
   .IMAGES {
     grid-area: images;
-    background-color: rgba(255,200,118,0.25);
+    background: linear-gradient(180deg, rgba(255,200,118,0.15) 0%, rgba(255,200,118,0.5) 100%);
   }
   .IMAGES:hover {
       color: rgba(200, 150,255, 1);
@@ -311,7 +361,7 @@ a:hover {color: inherit;
 
   .MOTION {
     grid-area: motion;
-    background-color: rgba(255,184,153,0.25);
+    background: linear-gradient(180deg, rgba(255,184,153,0.15) 0%, rgba(255,184,153,0.75) 100%);
   }
   .MOTION:hover {
     color: rgba(255, 133, 215, 1)
