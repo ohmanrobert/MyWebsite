@@ -21,6 +21,58 @@
 		"places client"
 		"contact contact";
 	}
+	.PhPeoplePage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"pplcontent pplcontent"
+		"subnavphoto subnavphoto"
+		"contact contact";
+	}
+	.PhCityPage {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 100px 1fr 100px 15px;
+			grid-gap: 1em;
+			grid-template-areas:
+			"navbar navbar"
+			"citycontent citycontent"
+			"subnavphoto subnavphoto"
+			"contact contact";
+	}
+	.PhPlacesPage {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 100px 1fr 100px 15px;
+			grid-gap: 1em;
+			grid-template-areas:
+			"navbar navbar"
+			"placescontent placescontent"
+			"subnavphoto subnavphoto"
+			"contact contact";
+	}
+	.PhClientPage {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 100px 1fr 100px 15px;
+				grid-gap: 1em;
+				grid-template-areas:
+				"navbar navbar"
+				"clientcontent clientcontent"
+				"subnavphoto subnavphoto"
+				"contact contact";
+		}
+	.subnavPhoto {
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 100px;
+			grid-gap: 1em;
+			grid-template-areas:
+			"people city places client";
+	}
 
 	.PAINTINGpage {
 		display: grid;
@@ -33,7 +85,58 @@
 		"digital sketch"
 		"contact contact";
 	}
-
+	.subnavPaint {
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 100px;
+			grid-gap: 1em;
+			grid-template-areas:
+			"oil watercolor digital sketch";
+	}
+	.PaOilPage {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 100px 1fr 100px 15px;
+				grid-gap: 1em;
+				grid-template-areas:
+				"navbar navbar"
+				"oilcontent oilcontent"
+				"subnavpaint subnavpaint"
+				"contact contact";
+		}
+	.PaWatPage {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 100px 1fr 100px 15px;
+					grid-gap: 1em;
+					grid-template-areas:
+					"navbar navbar"
+					"watercontent watercontent"
+					"subnavpaint subnavpaint"
+					"contact contact";
+			}
+	.PaDgtlPage {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-template-rows: 100px 1fr 100px 15px;
+						grid-gap: 1em;
+						grid-template-areas:
+						"navbar navbar"
+						"dgtlcontent dgtlcontent"
+						"subnavpaint subnavpaint"
+						"contact contact";
+				}
+	.PaSketchPage {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 100px 1fr 100px 15px;
+					grid-gap: 1em;
+					grid-template-areas:
+					"navbar navbar"
+					"sketchcontent sketchcontent"
+					"subnavpaint subnavpaint"
+					"contact contact";
+}
 	.threeDeepage {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -43,6 +146,36 @@
 		"navbar navbar"
 		"images motion"
 		"contact contact";
+}
+	.threeDeeImgPage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"imgcontent imgcontent"
+		"subnav3d subnav3d"
+		"contact contact";
+				}
+	.threeDeeMotPage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"motcontent motcontent"
+		"subnav3d subnav3d"
+		"contact contact";
+							}
+	.subnav3D {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"images motion";
 	}
 	.ANIMATIONpage {
 		display: grid;
@@ -72,7 +205,7 @@
 		"photo paint threedeearea animation";
 	}
 
-	.NAVBARthreedee {
+	.NAVBAR3D {
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 100px;
@@ -141,6 +274,94 @@
 	"animcontent"
 	"contact";
 	}
+	.PhPeoplePage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"pplcontent"
+		"subnavphoto"
+		"contact";
+	}
+	.PhCityPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"citycontent"
+		"subnavphoto"
+		"contact";
+	}
+	.PhPlacesPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"placescontent"
+		"subnavphoto"
+		"contact";
+	}
+	.PhClientPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"clientcontent"
+		"subnavphoto"
+		"contact";
+	}
+	.PaOilPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"oilcontent"
+		"subnavpaint"
+		"contact";
+	}
+	.PaWatPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"watercontent"
+		"subnavpaint"
+		"contact";
+	}
+	.PaDgtlPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"dgtlcontent"
+		"subnavpaint"
+		"contact";
+	}
+	.PaSketchPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"sketchcontent"
+		"subnavpaint"
+		"contact";
+	}
 
 	.NAVBARpaint {
 		display: grid;
@@ -172,10 +393,39 @@
 		"threedeearea animation";
 	}
 
+	.subnavPhoto {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"people city"
+		"places client";
+	}
+	.subnavPaint {
+		grid-area: subnavpaint;
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"oil watercolor"
+		"digital sketch";
+	}
+
+	.subnav3D {
+		grid-area: subnav3d;
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"images motion"
+	}
 
 }
 @media screen and (max-width: 900px) {
-	.NAVBARthreedee {
+	.NAVBAR3D {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 50px 50px;
@@ -194,5 +444,35 @@
 		"images"
 		"motion"
 		"contact";
+	}
+	.threeDeeImgPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"imgcontent"
+		"subnav3d"
+		"contact";
+	}
+	.threeDeeMotPage {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar"
+		"motcontent"
+		"subnav3d"
+		"contact";
+	}
+	.subnav3D {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px;
+		grid-gap: .5em;
+		grid-template-areas:
+		"images motion";
 	}
 }

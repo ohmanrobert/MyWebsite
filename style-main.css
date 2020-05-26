@@ -17,6 +17,42 @@
   padding: .75em;
   z-index: -3;
 }
+.PhPeoplePage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PhCityPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PhPlacesPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PhClientPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
 
 .PAINTINGpage {
   background-image: url('trash-1994.jpg');
@@ -27,7 +63,62 @@
   padding: .75em;
   z-index: -3;
 }
+.PaOilPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PaWatPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PaDgtlPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.PaSketchPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+
 .threeDeepage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.threeDeeImgPage {
+  background-image: url('trash-1994.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: calc(100vh - 2.5em);
+  padding: .75em;
+  z-index: -3;
+}
+.threeDeeMotPage {
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +138,33 @@
   z-index: -3;
 }
 
+
 .PAINTINGpage .PAINT {color: rgba(100,255,150, 1);}
 .PHOTOpage .PHOTO {color: rgba(255,218,138, 1);}
 .threeDeepage .threeDee {color: rgba(200, 150,255, 1);}
 .ANIMATIONpage .ANIMATION {color: rgba(255, 175, 200, 1);}
+.PhPeoplePage .PHOTO,
+.PhPeoplePage .PEOPLE {color: rgba(255,218,138, 1); }
+.PhCityPage .PHOTO,
+.PhCityPage .CITY {color: rgba(255,218,138, 1); }
+.PhPlacesPage .PHOTO {color: rgba(255,218,138, 1);}
+.PhPlacesPage .PLACES {color: rgba(255, 161, 96, 1);}
+.PhClientPage .PHOTO {color: rgba(255,218,138, 1);}
+.PhClientPage .CLIENT {color: rgba(255, 161, 96, 1);}
+.PaOilPage .PAINT,
+.PaOilPage .OIL,
+.PaWatPage .PAINT,
+.PaWatPage .WATERCOLOR,
+.PaDgtlPage .PAINT,
+.PaSketchPage .PAINT {color: rgba(100,255,150, 1);}
+.PaDgtlPage .DIGITAL,
+.PaSketchPage .SKETCH {color: rgba(255, 150, 255, 1);}
+.threeDeeImgPage .threeDee,
+.threeDeeImgPage .IMAGES,
+.threeDeeMotPage .threeDee,
+.threeDeeMotPage .MOTION {color: rgba(200, 150,255, 1);}
+
+
 
 a {
   font-size: 100%;
@@ -136,11 +250,20 @@ a:hover {color: inherit;
 .NAVBARphoto {
   grid-area: navbar;
 }
-.NAVBARthreedee {
+.NAVBAR3D {
   grid-area: navbar;
 }
 .NAVBARanimation {
   grid-area: navbar;
+}
+.subnavPhoto {
+  grid-area: subnavphoto;
+}
+.subnavPaint {
+  grid-area: subnavpaint;
+}
+.subnav3D {
+  grid-area: subnav3d;
 }
 
 .HOME {
@@ -188,6 +311,156 @@ a:hover {color: inherit;
 
 .ANIMCONTENT {
   grid-area: animcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.PEOPLECONTENT {
+  grid-area: pplcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.CITYCONTENT {
+  grid-area: citycontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.CLIENTCONTENT {
+  grid-area: clientcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.PLACESCONTENT {
+  grid-area: placescontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.OILCONTENT {
+  grid-area: oilcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.WATERCONTENT {
+  grid-area: watercontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.DGTLCONTENT {
+  grid-area: dgtlcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.SKETCHCONTENT {
+  grid-area: sketchcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.IMGCONTENT {
+  grid-area: imgcontent;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: top;
+  z-index: 3;
+  padding: .5em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  background: linear-gradient(180deg, rgba(138,255,218,0.1) 0%, rgba(138,255,218,0.5)) 100%;
+}
+.MOTCONTENT {
+  grid-area: motcontent;
   color: white;
   font-family: sans-serif;
   text-align: center;
