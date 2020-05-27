@@ -5,8 +5,8 @@
 .PhPlacesPage,
 .PhClientPage,
 .PAINTINGpage,
-.PaOilPage,
-.PaWatPage,
+.PaCanvasPage,
+.PaPaperPage,
 .PaDgtlPage,
 .PaSketchPage,
 .threeDeepage,
@@ -31,8 +31,8 @@
 .CITY,
 .PEOPLE,
 .PLACES,
-.OIL,
-.WATERCOLOR,
+.CANVAS,
+.PAPER,
 .DIGITAL,
 .SKETCH,
 .IMAGES,
@@ -44,8 +44,8 @@
 .CITYCONTENT,
 .PLACESCONTENT,
 .CLIENTCONTENT,
-.OILCONTENT,
-.WATERCONTENT,
+.CANVASCONTENT,
+.PAPERCONTENT,
 .DGTLCONTENT,
 .SKETCHCONTENT,
 .IMGCONTENT,
@@ -72,8 +72,8 @@
 .CITY:hover,
 .PEOPLE:hover,
 .PLACES:hover,
-.OIL:hover,
-.WATERCOLOR:hover,
+.CANVAS:hover,
+.PAPER:hover,
 .DIGITAL:hover,
 .SKETCH:hover,
 .IMAGES:hover,
@@ -98,12 +98,12 @@
 .PhPlacesPage .PLACES {color: rgba(255, 161, 96, 1);}
 .PhClientPage .PHOTO {color: rgba(255,218,138, 1);}
 .PhClientPage .CLIENT {color: rgba(255, 161, 96, 1);}
-.PaOilPage .PAINT,
-.PaOilPage .OIL,
-.PaWatPage .PAINT,
+.PaCanvasPage .PAINT,
+.PaCanvasPage .CANVAS,
+.PaPaperPage .PAINT,
 .PaDgtlPage .PAINT,
 .PaSketchPage .PAINT {color: rgba(100,255,150, 1);}
-.PaWatPage .WATERCOLOR {color: rgba(170,242,255, 1);}
+.PaPaperPage .PAPER {color: rgba(170,242,255, 1);}
 .PaDgtlPage .DIGITAL {color: rgba(192,160,255, 1);}
 .PaSketchPage .SKETCH {color: rgba(255, 150, 255, 1);}
 .threeDeeImgPage .threeDee,
@@ -214,14 +214,14 @@ a:hover {color: inherit;
   backdrop-filter: blur(20px);
   background: linear-gradient(180deg, rgba(175, 100, 255, 0.15) 0%, rgba(175, 100, 255, 0.5) 100%);
 }
-.OILCONTENT {
-  grid-area: oilcontent;
+.CANVASCONTENT {
+  grid-area: canvascontent;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
 }
-.WATERCONTENT {
-  grid-area: watercontent;
+.PAPERCONTENT {
+  grid-area: papercontent;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   background: linear-gradient(180deg, rgba(255,155,177,0.15) 0%, rgba(255,155,177,0.5) 100%);
@@ -281,19 +281,19 @@ a:hover {color: inherit;
     color: rgba(255, 178, 102, 1);
   }
 
-  .OIL {
-    grid-area: oil;
+  .CANVAS {
+    grid-area: canvas;
     background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
   }
-  .OIL:hover {
+  .CANVAS:hover {
     color: rgba(100,255,150, 1);
   }
 
-  .WATERCOLOR {
-  grid-area: watercolor;
+  .PAPER {
+  grid-area: paper;
   background: linear-gradient(180deg, rgba(255,155,177,0.15) 0%, rgba(255,155,177,0.5) 100%);
   }
-  .WATERCOLOR:hover {
+  .PAPER:hover {
     color: rgba(170,242,255, 1);
   }
 
@@ -366,19 +366,19 @@ a:hover {color: inherit;
     color: rgba(255, 161, 96, 1);
   }
 
-  .OIL {
-    grid-area: oil;
+  .CANVAS {
+    grid-area: canvas;
     background: linear-gradient(180deg, rgba(255,175,200,0.15) 0%, rgba(255,175,200,0.5) 100%);
   }
-  .OIL:hover {
+  .CANVAS:hover {
     color: rgba(100,255,150, 1);
   }
 
-  .WATERCOLOR {
-  grid-area: watercolor;
+  .PAPER {
+  grid-area: paper;
   background: linear-gradient(180deg, rgba(255,155,177,0.15) 0%, rgba(255,155,177,0.5) 100%);
   }
-  .WATERCOLOR:hover {
+  .PAPER:hover {
     color: rgba(170,242,255, 1);
   }
 

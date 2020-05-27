@@ -2,7 +2,7 @@
 	.site {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) 15px;
+		grid-template-rows: minmax(75px, 1fr) minmax(75px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 			"photo paint"
@@ -13,7 +13,7 @@
 	.PHOTOpage {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 15px;
+		grid-template-rows: 100px minmax(75px, 1fr) minmax(75px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar navbar"
@@ -77,11 +77,11 @@
 	.PAINTINGpage {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px minmax(150px, 1fr) minmax(150px, 1fr) 15px;
+		grid-template-rows: 100px minmax(75px, 1fr) minmax(75px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar navbar"
-		"oil watercolor"
+		"canvas paper"
 		"digital sketch"
 		"contact contact";
 	}
@@ -91,56 +91,56 @@
 			grid-template-rows: 100px;
 			grid-gap: 1em;
 			grid-template-areas:
-			"oil watercolor digital sketch";
+			"canvas paper digital sketch";
 	}
-	.PaOilPage {
+	.PaCanvasPage {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				grid-template-rows: 100px 1fr 100px 15px;
 				grid-gap: 1em;
 				grid-template-areas:
 				"navbar navbar"
-				"oilcontent oilcontent"
+				"canvascontent canvascontent"
 				"subnavpaint subnavpaint"
 				"contact contact";
 		}
-	.PaWatPage {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-template-rows: 100px 1fr 100px 15px;
-					grid-gap: 1em;
-					grid-template-areas:
-					"navbar navbar"
-					"watercontent watercontent"
-					"subnavpaint subnavpaint"
-					"contact contact";
-			}
+	.PaPaperPage {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"papercontent papercontent"
+		"subnavpaint subnavpaint"
+		"contact contact";
+	}
 	.PaDgtlPage {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						grid-template-rows: 100px 1fr 100px 15px;
-						grid-gap: 1em;
-						grid-template-areas:
-						"navbar navbar"
-						"dgtlcontent dgtlcontent"
-						"subnavpaint subnavpaint"
-						"contact contact";
-				}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"dgtlcontent dgtlcontent"
+		"subnavpaint subnavpaint"
+		"contact contact";
+	}
 	.PaSketchPage {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-template-rows: 100px 1fr 100px 15px;
-					grid-gap: 1em;
-					grid-template-areas:
-					"navbar navbar"
-					"sketchcontent sketchcontent"
-					"subnavpaint subnavpaint"
-					"contact contact";
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 100px 15px;
+		grid-gap: 1em;
+		grid-template-areas:
+		"navbar navbar"
+		"sketchcontent sketchcontent"
+		"subnavpaint subnavpaint"
+		"contact contact";
 }
 	.threeDeepage {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px minmax(150px, 1fr) 15px;
+		grid-template-rows: 100px minmax(75px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar navbar"
@@ -240,7 +240,7 @@
 	.PHOTOpage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr 1fr 1fr 1fr 15px;
+		grid-template-rows: 100px minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"
@@ -254,12 +254,12 @@
 	.PAINTINGpage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr 1fr 1fr 1fr 15px;
+		grid-template-rows: 100px minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"
-		"oil"
-		"watercolor"
+		"canvas"
+		"paper"
 		"digital"
 		"sketch"
 		"contact";
@@ -318,25 +318,25 @@
 		"subnavphoto"
 		"contact";
 	}
-	.PaOilPage {
+	.PaCanvasPage {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 100px 1fr 100px 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"
-		"oilcontent"
+		"canvascontent"
 		"subnavpaint"
 		"contact";
 	}
-	.PaWatPage {
+	.PaPaperPage {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 100px 1fr 100px 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"
-		"watercontent"
+		"papercontent"
 		"subnavpaint"
 		"contact";
 	}
@@ -409,7 +409,7 @@
 		grid-template-rows: calc(50px - .25em) calc(50px - .25em);
 		grid-gap: .5em;
 		grid-template-areas:
-		"oil watercolor"
+		"canvas paper"
 		"digital sketch";
 	}
 
@@ -437,7 +437,7 @@
 	.threeDeepage {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr 1fr 15px;
+		grid-template-rows: 100px minmax(75px, 1fr) minmax(75px, 1fr) 15px;
 		grid-gap: 1em;
 		grid-template-areas:
 		"navbar"
