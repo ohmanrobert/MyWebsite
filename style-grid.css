@@ -366,7 +366,7 @@
 	.NAVBARpaint {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50px 50px;
+		grid-template-rows: calc(50px - .25em) calc(50px - .25em);
 		grid-gap: .5em;
 		grid-template-areas:
 		"photo paint"
@@ -376,7 +376,7 @@
 	.NAVBARphoto {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50px 50px;
+		grid-template-rows: calc(50px - .25em) calc(50px - .25em);
 		grid-gap: .5em;
 		grid-template-areas:
 		"photo paint"
@@ -386,7 +386,7 @@
 	.NAVBARanimation {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50px 50px;
+		grid-template-rows: calc(50px - .25em) calc(50px - .25em);
 		grid-gap: .5em;
 		grid-template-areas:
 		"photo paint"

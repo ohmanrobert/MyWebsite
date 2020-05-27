@@ -1,139 +1,23 @@
-.site {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-
-.PHOTOpage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PhPeoplePage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PhCityPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PhPlacesPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PhClientPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-
-.PAINTINGpage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PaOilPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PaWatPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PaDgtlPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.PaSketchPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-
-.threeDeepage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.threeDeeImgPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-.threeDeeMotPage {
-  background-image: url('trash-1994.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: calc(100vh - 2.5em);
-  padding: .75em;
-  z-index: -3;
-}
-
+.site,
+.PHOTOpage,
+.PhPeoplePage,
+.PhCityPage,
+.PhPlacesPage,
+.PhClientPage,
+.PAINTINGpage,
+.PaOilPage,
+.PaWatPage,
+.PaDgtlPage,
+.PaSketchPage,
+.threeDeepage,
+.threeDeeImgPage,
+.threeDeeMotPage,
 .ANIMATIONpage {
   background-image: url('trash-1994.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  min-height: calc(100vh - 2.5em);
+  height: calc(100vh - 2.5em);
   padding: .75em;
   z-index: -3;
 }
@@ -161,8 +45,8 @@
 .PaSketchPage .SKETCH {color: rgba(255, 150, 255, 1);}
 .threeDeeImgPage .threeDee,
 .threeDeeImgPage .IMAGES,
-.threeDeeMotPage .threeDee,
-.threeDeeMotPage .MOTION {color: rgba(200, 150,255, 1);}
+.threeDeeMotPage .threeDee {color: rgba(200, 150,255, 1);}
+.threeDeeMotPage .MOTION {color: rgba(255, 133, 215, 1);}
 
 
 
@@ -494,7 +378,6 @@ a:hover {color: inherit;
   .CLIENT {
     grid-area: client;
     background: linear-gradient(180deg, rgba(201, 136, 255, .15) 0%, rgba(201, 136, 255, .6) 100%);
-    ;
   }
   .CLIENT:hover {
     color: rgba(255, 161, 96, 1);
@@ -636,7 +519,7 @@ a:hover {color: inherit;
     background: linear-gradient(180deg, rgba(255,184,153,0.15) 0%, rgba(255,184,153,0.75) 100%);
   }
   .MOTION:hover {
-    color: rgba(255, 133, 215, 1)
+    color: rgba(255, 133, 215, 1);
 
   }
 }
